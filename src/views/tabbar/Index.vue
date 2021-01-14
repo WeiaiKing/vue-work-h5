@@ -1,7 +1,6 @@
 <template>
   <div class="index">
     <h2>index</h2>
-    <button disabled>Click Me!</button>
     <ak-button>默认按钮</ak-button>
     <ak-button type="primary">primary组件</ak-button>
     <ak-button type="success">success组件</ak-button>
@@ -28,11 +27,22 @@
       <ak-button type="warning" circle icon="editor" disabled></ak-button>
       <ak-button @click="onClick" disabled>点击事件</ak-button>
       <ak-button disabled>点击事件</ak-button>
+      <ak-dialog title="温馨提示" width="80%" top="200px">
+        <template v-slot:title>
+          <div style="color: red">我是标题</div>
+        </template>
+        <span>这是匿名插槽</span>
+        <template v-slot:footer>
+          <div style="color: red">尾部</div>
+        </template>
+      </ak-dialog>
     </div>
   </div>
 </template>
 <script>
+import akDialog from '../ui/Dialog.vue'
 export default {
+  components: { akDialog },
   methods: {
     onClick() {
       console.log(

@@ -54,9 +54,7 @@ export default {
       this.$emit('click', e)
     }
   },
-  mounted() {
-    console.log(this.type)
-  }
+  mounted() {}
 }
 </script>
 
