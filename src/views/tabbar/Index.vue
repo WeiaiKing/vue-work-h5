@@ -27,7 +27,7 @@
       <ak-button type="warning" circle icon="editor" disabled></ak-button>
       <ak-button @click="onClick" disabled>点击事件</ak-button>
       <ak-button disabled>点击事件</ak-button>
-      <ak-dialog title="温馨提示" width="80%" top="200px">
+      <!-- <ak-dialog title="温馨提示" width="80%" top="200px">
         <template v-slot:title>
           <div style="color: red">我是标题</div>
         </template>
@@ -35,14 +35,16 @@
         <template v-slot:footer>
           <div style="color: red">尾部</div>
         </template>
-      </ak-dialog>
+      </ak-dialog> -->
+      <ak-input placeholder="请输入密码" type="password" name="name"></ak-input>
     </div>
   </div>
 </template>
 <script>
-import akDialog from '../ui/Dialog.vue'
+// import akDialog from '../ui/Dialog.vue'
+import akInput from '../ui/Input.vue'
 export default {
-  components: { akDialog },
+  components: { akInput },
   methods: {
     onClick() {
       console.log(
