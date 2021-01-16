@@ -1,13 +1,28 @@
 <template>
-  <div class="ak-input">
+  <div class="ak-input" :class="{ 'ak-input_suffix': showSuffix }">
     <input
       class="ak-input_inner"
       :class="{ 'is-disabled': disabled }"
       :placeholder="placeholder"
-      :type="type"
+      :type="showPassword ? (passwordVisible ? 'text' : 'password') : type"
       :name="name"
+      :value="value"
+      @input="handleInput"
       :disabled="disabled"
     />
+    <span class="ak-input_suffix">
+      <i
+        class="on-input_icon ak-cancel"
+        v-if="clearable && value"
+        @click="clear"
+      ></i>
+      <i
+        class="on-input_icon ak-visible"
+        v-if="showPassword && type == 'password'"
+        @click="handlePassword"
+      >
+      </i>
+    </span>
   </div>
 </template>
 <script>
@@ -30,12 +45,44 @@ export default {
     disabled: {
       type: Boolean,
       default: false
+    },
+    value: {
+      type: String,
+      default: ''
+    },
+    clearable: {
+      type: Boolean,
+      default: false
+    },
+    showPassword: {
+      type: Boolean,
+      default: false
+    }
+  },
+  watch: {},
+  computed: {
+    showSuffix() {
+      return this.clearable || this.showPassword
     }
   },
   data() {
-    return {}
+    return {
+      // 显示是否显示密码框
+      passwordVisible: false
+    }
   },
-  methods: {}
+
+  methods: {
+    handleInput(e) {
+      this.$emit('input', e.target.value)
+    },
+    clear() {
+      this.$emit('input', '')
+    },
+    handlePassword() {
+      this.passwordVisible = !this.passwordVisible
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
@@ -71,6 +118,28 @@ export default {
       border-color: #e4e7ed;
       color: #c0c4cc;
       cursor: not-allowed;
+    }
+  }
+}
+.ak-input_suffix {
+  .ak-input_inner {
+    padding-right: 30px;
+  }
+  .ak-input_suffix {
+    position: absolute;
+    right: 10px;
+    height: 100%;
+    top: 0;
+    line-height: 40px;
+    text-align: center;
+    color: #c0c4cc;
+    transition: all 0.3s;
+    z-index: 900;
+    i {
+      color: #c0c4cc;
+      font-size: 14px;
+      cursor: pointer;
+      transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     }
   }
 }
