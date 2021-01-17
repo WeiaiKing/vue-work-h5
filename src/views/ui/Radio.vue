@@ -10,9 +10,9 @@
       />
     </span>
     <span class="ak-radio_label">
-      <slot></slot>
+      <slot>{{ label }}</slot>
       <!-- 如果没有传值，就把label作为文本显示 -->
-      <template v-if="!$slots.default">{{ label }}</template>
+      <!-- <template v-if="!$slots.default">{{ label }}</template> -->
     </span>
   </label>
 </template>

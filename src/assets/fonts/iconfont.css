@@ -8,7 +8,7 @@
   /* iOS 4.1- */
 }
 
-[class*='ak'] {
+.ak-icon {
   font-family: "iconfont" !important;
   font-size: 16px;
   font-style: normal;
@@ -16,182 +16,182 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.ak-copy:before {
+.ak-icon-copy:before {
   content: "\e6f4";
 }
 
-.ak-dollar:before {
+.ak-icon-dollar:before {
   content: "\e6f5";
 }
 
-.ak-history:before {
+.ak-icon-history:before {
   content: "\e6f8";
 }
 
-.ak-editor:before {
+.ak-icon-editor:before {
   content: "\e6f6";
 }
 
-.ak-data:before {
+.ak-icon-data:before {
   content: "\e6f9";
 }
 
-.ak-gift:before {
+.ak-icon-gift:before {
   content: "\e6fa";
 }
 
-.ak-integral:before {
+.ak-icon-integral:before {
   content: "\e6fb";
 }
 
-.ak-nav-list:before {
+.ak-icon-nav-list:before {
   content: "\e6fd";
 }
 
-.ak-pic:before {
+.ak-icon-pic:before {
   content: "\e6ff";
 }
 
-.ak-Notvisible:before {
+.ak-icon-Notvisible:before {
   content: "\e6fe";
 }
 
-.ak-play:before {
+.ak-icon-play:before {
   content: "\e701";
 }
 
-.ak-rising:before {
+.ak-icon-rising:before {
   content: "\e703";
 }
 
-.ak-QRcode:before {
+.ak-icon-QRcode:before {
   content: "\e704";
 }
 
-.ak-rmb:before {
+.ak-icon-rmb:before {
   content: "\e705";
 }
 
-.ak-similar-product:before {
+.ak-icon-similar-product:before {
   content: "\e707";
 }
 
-.ak-Exportservices:before {
+.ak-icon-Exportservices:before {
   content: "\e702";
 }
 
-.ak-sendinquiry:before {
+.ak-icon-sendinquiry:before {
   content: "\e70d";
 }
 
-.ak-all-fill:before {
+.ak-icon-all-fill:before {
   content: "\e718";
 }
 
-.ak-favorites-fill:before {
+.ak-icon-favorites-fill:before {
   content: "\e721";
 }
 
-.ak-integral-fill:before {
+.ak-icon-integral-fill:before {
   content: "\e726";
 }
 
-.ak-namecard-fill:before {
+.ak-icon-namecard-fill:before {
   content: "\e72a";
 }
 
-.ak-pic-fill:before {
+.ak-icon-pic-fill:before {
   content: "\e72e";
 }
 
-.ak-play-fill:before {
+.ak-icon-play-fill:before {
   content: "\e72f";
 }
 
-.ak-prompt-fill:before {
+.ak-icon-prompt-fill:before {
   content: "\e730";
 }
 
-.ak-stop-fill:before {
+.ak-icon-stop-fill:before {
   content: "\e738";
 }
 
-.ak-column:before {
+.ak-icon-column:before {
   content: "\e741";
 }
 
-.ak-add-account:before {
+.ak-icon-add-account:before {
   content: "\e742";
 }
 
-.ak-column1:before {
+.ak-icon-column1:before {
   content: "\e743";
 }
 
-.ak-add:before {
+.ak-icon-add:before {
   content: "\e744";
 }
 
-.ak-agriculture:before {
+.ak-icon-agriculture:before {
   content: "\e745";
 }
 
-.ak-years:before {
+.ak-icon-years:before {
   content: "\e746";
 }
 
-.ak-add-cart:before {
+.ak-icon-add-cart:before {
   content: "\e747";
 }
 
-.ak-arrow-right:before {
+.ak-icon-arrow-right:before {
   content: "\e748";
 }
 
-.ak-arrow-left:before {
+.ak-icon-arrow-left:before {
   content: "\e749";
 }
 
-.ak-apparel:before {
+.ak-icon-apparel:before {
   content: "\e74a";
 }
 
-.ak-all1:before {
+.ak-icon-all1:before {
   content: "\e74b";
 }
 
-.ak-arrow-up:before {
+.ak-icon-arrow-up:before {
   content: "\e74c";
 }
 
-.ak-ascending:before {
+.ak-icon-ascending:before {
   content: "\e74d";
 }
 
-.ak-ashbin:before {
+.ak-icon-ashbin:before {
   content: "\e74e";
 }
 
-.ak-atm:before {
+.ak-icon-atm:before {
   content: "\e74f";
 }
 
-.ak-auto:before {
+.ak-icon-auto:before {
   content: "\e6eb";
 }
 
-.ak-all:before {
+.ak-icon-all:before {
   content: "\e6ef";
 }
 
-.ak-bussiness-man:before {
+.ak-icon-bussiness-man:before {
   content: "\e6f0";
 }
 
-.ak-component:before {
+.ak-icon-component:before {
   content: "\e6f2";
 }
 
-.ak-code:before {
+.ak-icon-code:before {
   content: "\e6f3";
 }

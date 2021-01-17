@@ -11,7 +11,7 @@
     @click="handleClick"
     :disabled="disabled"
   >
-    <i v-if="icon" :class="`ak-${icon}`"></i>
+    <i v-if="icon" :class="`ak-icon-${icon}`" class="ak-icon"></i>
     <!-- 如果没传入文本插槽，则不显示span内容 -->
     <span v-if="$slots.default"><slot></slot></span>
   </button>
@@ -53,8 +53,7 @@ export default {
     handleClick(e) {
       this.$emit('click', e)
     }
-  },
-  mounted() {}
+  }
 }
 </script>
 
@@ -213,7 +212,7 @@ export default {
   border-radius: 50%;
   padding: 12px;
 }
-.ak-button [class*='ak-'] + span {
+.ak-button [class*='ak-icon-'] + span {
   margin-left: 5px;
 }
 .ak-button.is-disabled {

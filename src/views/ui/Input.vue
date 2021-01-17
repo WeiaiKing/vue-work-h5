@@ -12,12 +12,12 @@
     />
     <span class="ak-input_suffix">
       <i
-        class="on-input_icon ak-cancel"
+        class="on-input_icon ak-icon-add ak-icon"
         v-if="clearable && value"
         @click="clear"
       ></i>
       <i
-        class="on-input_icon ak-visible"
+        class="on-input_icon ak-icon-copy ak-icon"
         v-if="showPassword && type == 'password'"
         @click="handlePassword"
       >
